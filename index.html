@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text-to-Speech with Text Selection</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <h1>Text-to-Speech with Text Selection</h1>
+  <p>Select any text on this page or enter text below:</p>
+  <div id="selected-text">Selected Text: <span id="selected-text-content"></span></div>
+  <textarea id="text-input" placeholder="Or enter text to speak..."></textarea>
+  <br>
+  <div class="voice-select">
+    <label for="voice-select">Select Voice:</label>
+    <select id="voice-select">
+      <!-- Voices will be populated dynamically -->
+    </select>
+    <button onclick="previewVoice()">Preview Voice</button>
+  </div>
+  <button onclick="speakSelectedText()">Speak Selected Text</button>
+  <button onclick="stop()">Stop</button>
+  <button onclick="pause()">Pause</button>
+  <button onclick="resume()">Resume</button>
+  <div class="progress-bar">
+    <div class="progress" id="progress"></div>
+  </div>
+  <p id="status">Status: Ready</p>
+  <div id="text-output"></div>
+
+  <script src="assets/script.js"></script>
+</body>
+</html>
