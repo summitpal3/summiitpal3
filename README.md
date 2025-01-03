@@ -9,7 +9,7 @@ A simple web app that converts selected or entered text into speech using the We
 - Real-time word highlighting.
 
 ## How to Use
-1. Open the app: [Live Demo](https://summitpal3.github.io/sunmitpal3)
+1. Open the app: [Live Demo](https://summitpal3.github.io/sunmitpal3/text to speech.html)
 2. Select text on the page or enter text in the textarea.
 3. Click "Speak Selected Text" to start.
 
